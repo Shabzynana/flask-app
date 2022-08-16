@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% block head%}
+    {{ super() }}
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    /* body{background:linear-gradient(to bottom right, rgba(40, 180, 131, 0.3), rgba(0, 0, 131, 0.5)) !important;height: 100vh !important;} */
+    body{
+      background-image: url('/static/images/todo4.jpg') !important;
+      /* height: 535px; */
+      height: 75vh !important;
+      background-repeat: none;
+      background-attachment: scroll;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .con{width: 600px;margin: auto;margin-top:120px;}
+    .lab{font-size: 25px;}
+    </style>
+    {% endblock%}
+  </head>
+  <body>
+
+    {% block content %}
+
+    <div class="container con">
+      <form method="POST" action="">
+
+        {{ form.hidden_tag() }}
+
+         <div class="form-group">
+         {{ form.text.label(class="form-control-label lab") }}
+         {{ form.text(class="form-control form-control-lg",placeholder="fill in task") }}
+         </div>
+         <div class="form-group">
+         {{ form.date.label(class="form-control-label lab") }}
+         {{ form.date(class="form-control form-control-lg") }}
+         </div>
+         <div class="form-group">
+         {{ form.submit(class="btn btn-dark") }}
+         </div>
+
+      </form>
+    </div>
+
+    {% endblock %}
+
+  </body>
+</html>
