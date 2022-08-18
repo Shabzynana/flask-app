@@ -22,7 +22,7 @@ app.config['SECRET_KEY'] = 'mysegcret'
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgres@localhost:5432/c"
 # app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://shabzy:1111@localhost:5432/flask_app"
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://bgegmxlfdcscvg:d29bda716019e219967d4d9649eb7b71d07455ae1ded33113d3e1f488c73143e@ec2-44-205-112-253.compute-1.amazonaws.com:5432/df6e6097isv9hp"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://bgegmxlfdcscvg:d29bda716019e219967d4d9649eb7b71d07455ae1ded33113d3e1f488c73143e@ec2-44-205-112-253.compute-1.amazonaws.com:5432/df6e6097isv9hp"
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
